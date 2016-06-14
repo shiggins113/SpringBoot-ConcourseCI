@@ -11,9 +11,9 @@ inputs:
 
 #run:
 #  path: pwd
-run:
-  path: ls
-  args: ["springconcoursetestGit"]
 #run:
-#  path: mvn
-#  args: ["-f", "springconcoursetestGit/pom.xml", "package"]
+#  path: ls
+#  args: ["springconcoursetestGit/pipeline"]
+run:
+  path: mvn
+  args: ["-f", "springconcoursetestGit/pom.xml", "package"]
