@@ -9,10 +9,10 @@ image_resource:
 inputs:
   - name: springconcoursetestGit
 
-run:
-  path: pwd
 #run:
-#  path: ls
+#  path: pwd
+run:
+  path: ls
 #run:
 #  path: mvn
 #  args: ["-f", "SpringBoot-ConcourseCI/pom.xml", "package"]
