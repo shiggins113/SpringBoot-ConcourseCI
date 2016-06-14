@@ -7,7 +7,7 @@ resources:
   - name: time
     type: time
     source:
-      interval: 60s
+      interval: 10s
 
 jobs:
   - name: Build Spring Concourse Test
