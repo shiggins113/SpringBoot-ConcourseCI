@@ -7,7 +7,7 @@ image_resource:
     tag: 8
 
 inputs:
-  - name: concoursetest
+  - name: springconcoursetestGit
 
 run:
   path: mvn
