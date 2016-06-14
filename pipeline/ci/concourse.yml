@@ -12,7 +12,7 @@ inputs:
 #run:
 #  path: pwd
 run:
-  path: ls
+  path: ls springconcoursetestGit/
 #run:
 #  path: mvn
-#  args: ["-f", "SpringBoot-ConcourseCI/pom.xml", "package"]
+#  args: ["-f", "springconcoursetestGit/pom.xml", "package"]
