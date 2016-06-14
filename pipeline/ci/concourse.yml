@@ -9,10 +9,6 @@ image_resource:
 inputs:
   - name: springconcoursetestGit
 
-#run:
-#  path: mvn
-#  args: ["SpringBoot-ConcourseCI/pom.xml", "package"]
-
 run:
-  path: echo
-  args: ["Hello, world!"]
+  path: mvn
+  args: ["-f", "SpringBoot-ConcourseCI/pom.xml", "package"]
