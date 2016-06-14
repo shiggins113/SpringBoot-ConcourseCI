@@ -1,0 +1,14 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: meteogroup/java
+    tag: 8
+
+inputs:
+  - name: concoursetest
+
+run:
+  path: mvn
+  args: ["SpringBoot-ConcourseCI/pom.xml", "package"]

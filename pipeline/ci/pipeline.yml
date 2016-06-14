@@ -1,0 +1,20 @@
+resources:
+  - name: springconcoursetest
+    type: git
+    source:
+      uri: https://github.com/MeteoGroup/transport-observation-service.git
+      branch: master
+  - name: time
+    type: time
+    source:
+      interval: 60s
+
+jobs:
+  - name: Build Spring Concourse Test
+    public: true
+    plan:
+    - get:  springconcoursetest
+      triggered: true
+    - task: package
+      privileged: true
+      file: transport-observation-service/pipeline/concourse.yml
