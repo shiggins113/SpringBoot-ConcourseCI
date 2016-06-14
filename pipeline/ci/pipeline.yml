@@ -1,8 +1,8 @@
 resources:
-  - name: springconcoursetest
+  - name: springconcoursetestGit
     type: git
     source:
-      uri: https://github.com/MeteoGroup/transport-observation-service.git
+      uri: https://github.com/SkyChanger/SpringBoot-ConcourseCI.git
       branch: master
   - name: time
     type: time
@@ -13,8 +13,8 @@ jobs:
   - name: Build Spring Concourse Test
     public: true
     plan:
-    - get:  springconcoursetest
+    - get:  springconcoursetestGit
       triggered: true
     - task: package
       privileged: true
-      file: transport-observation-service/pipeline/concourse.yml
+      file: SpringBoot-ConcourseCI/pipeline/ci/concourse.yml
