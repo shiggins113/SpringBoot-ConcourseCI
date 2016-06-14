@@ -13,7 +13,7 @@ inputs:
 #  path: pwd
 run:
   path: ls
-  args: ["../../"]
+  args: ["springconcoursetestGit"]
 #run:
 #  path: mvn
 #  args: ["-f", "springconcoursetestGit/pom.xml", "package"]
